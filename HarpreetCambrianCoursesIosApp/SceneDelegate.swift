@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var courseList = CourseList()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let navScene = window?.rootViewController as?
+            UINavigationController
+
+        let rootView = navScene?.topViewController as?
+        CourseTableViewController
+
+        rootView?.courseList = courseList
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -45,6 +54,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        print(#function)
+        let success = courseList.save()
+        if success{
+            print("save while entering background")
+        }
+        else{
+            print("error saving while entering background")
+        }
     }
 
 

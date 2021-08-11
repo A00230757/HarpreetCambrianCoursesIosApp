@@ -13,6 +13,16 @@
 		185AF8E6269A484C00F82D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185AF8E4269A484C00F82D6E /* Main.storyboard */; };
 		185AF8E8269A485000F82D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185AF8E7269A485000F82D6E /* Assets.xcassets */; };
 		185AF8EB269A485000F82D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185AF8E9269A485000F82D6E /* LaunchScreen.storyboard */; };
+		187D53BE26BC79D50019083B /* adminlogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53BD26BC79D50019083B /* adminlogin.swift */; };
+		187D53C026BC79F70019083B /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53BF26BC79F70019083B /* AdminLoginViewController.swift */; };
+		187D53C226BC7C690019083B /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C126BC7C690019083B /* AdminHomeViewController.swift */; };
+		187D53C426BC7FCF0019083B /* studentlogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C326BC7FCF0019083B /* studentlogin.swift */; };
+		187D53C626BC7FFD0019083B /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C526BC7FFD0019083B /* StudentLoginViewController.swift */; };
+		187D53C826BC80120019083B /* StudentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C726BC80120019083B /* StudentHomeViewController.swift */; };
+		18B5F9E626C487A100DC989A /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E526C487A100DC989A /* CourseTableViewController.swift */; };
+		18B5F9E826C487BE00DC989A /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E726C487BE00DC989A /* AddCourseViewController.swift */; };
+		18B5F9EA26C488A000DC989A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E926C488A000DC989A /* Course.swift */; };
+		18B5F9EC26C488AF00DC989A /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9EB26C488AF00DC989A /* CourseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		185AF8E7269A485000F82D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185AF8EA269A485000F82D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185AF8EC269A485000F82D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187D53BD26BC79D50019083B /* adminlogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminlogin.swift; sourceTree = "<group>"; };
+		187D53BF26BC79F70019083B /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
+		187D53C126BC7C690019083B /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		187D53C326BC7FCF0019083B /* studentlogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentlogin.swift; sourceTree = "<group>"; };
+		187D53C526BC7FFD0019083B /* StudentLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginViewController.swift; sourceTree = "<group>"; };
+		187D53C726BC80120019083B /* StudentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeViewController.swift; sourceTree = "<group>"; };
+		18B5F9E526C487A100DC989A /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
+		18B5F9E726C487BE00DC989A /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		18B5F9E926C488A000DC989A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		18B5F9EB26C488AF00DC989A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +79,20 @@
 				185AF8DE269A484C00F82D6E /* AppDelegate.swift */,
 				185AF8E0269A484C00F82D6E /* SceneDelegate.swift */,
 				185AF8E2269A484C00F82D6E /* ViewController.swift */,
+				187D53C726BC80120019083B /* StudentHomeViewController.swift */,
+				187D53C526BC7FFD0019083B /* StudentLoginViewController.swift */,
+				187D53C326BC7FCF0019083B /* studentlogin.swift */,
+				187D53C126BC7C690019083B /* AdminHomeViewController.swift */,
+				187D53BF26BC79F70019083B /* AdminLoginViewController.swift */,
+				187D53BD26BC79D50019083B /* adminlogin.swift */,
 				185AF8E4269A484C00F82D6E /* Main.storyboard */,
 				185AF8E7269A485000F82D6E /* Assets.xcassets */,
 				185AF8E9269A485000F82D6E /* LaunchScreen.storyboard */,
 				185AF8EC269A485000F82D6E /* Info.plist */,
+				18B5F9E526C487A100DC989A /* CourseTableViewController.swift */,
+				18B5F9E726C487BE00DC989A /* AddCourseViewController.swift */,
+				18B5F9E926C488A000DC989A /* Course.swift */,
+				18B5F9EB26C488AF00DC989A /* CourseList.swift */,
 			);
 			path = HarpreetCambrianCoursesIosApp;
 			sourceTree = "<group>";
@@ -137,9 +167,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B5F9EA26C488A000DC989A /* Course.swift in Sources */,
+				18B5F9E626C487A100DC989A /* CourseTableViewController.swift in Sources */,
 				185AF8E3269A484C00F82D6E /* ViewController.swift in Sources */,
+				187D53BE26BC79D50019083B /* adminlogin.swift in Sources */,
+				187D53C826BC80120019083B /* StudentHomeViewController.swift in Sources */,
+				187D53C026BC79F70019083B /* AdminLoginViewController.swift in Sources */,
+				18B5F9E826C487BE00DC989A /* AddCourseViewController.swift in Sources */,
+				187D53C226BC7C690019083B /* AdminHomeViewController.swift in Sources */,
+				187D53C626BC7FFD0019083B /* StudentLoginViewController.swift in Sources */,
 				185AF8DF269A484C00F82D6E /* AppDelegate.swift in Sources */,
 				185AF8E1269A484C00F82D6E /* SceneDelegate.swift in Sources */,
+				187D53C426BC7FCF0019083B /* studentlogin.swift in Sources */,
+				18B5F9EC26C488AF00DC989A /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
