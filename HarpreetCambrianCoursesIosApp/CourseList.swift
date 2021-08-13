@@ -17,13 +17,13 @@ class CourseList{
     }()
  
     init(){
-        let todos = ["feed the dog","do homework",
-
-                    "sleep","play video games"]
-
-        for todo in todos{
-            list.append(Course(title: todo))
-        }
+//        let todos = ["feed the dog","do homework",
+//
+//                    "sleep","play video games"]
+//
+//        for todo in todos{
+//            list.append(Course(title: todo))
+//        }
         do{
             let data = try Data(contentsOf: courseURL)
             list = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as! [Course]
