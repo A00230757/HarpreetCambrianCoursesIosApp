@@ -51,8 +51,8 @@ class AdminLoginViewController: UIViewController {
                 
             case "forgotpassword":
                 print("forgot password")
-//                let dst = segue.destination as! FPViewController
-//                dst.user = user
+                let dst = segue.destination as! FPAdminViewController
+                dst.admin = user
             
             default:
                 preconditionFailure("seque identifier: \(segue.identifier) was not found")

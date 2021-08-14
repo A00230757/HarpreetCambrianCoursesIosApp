@@ -20,6 +20,7 @@
 		187D53C426BC7FCF0019083B /* studentlogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C326BC7FCF0019083B /* studentlogin.swift */; };
 		187D53C626BC7FFD0019083B /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C526BC7FFD0019083B /* StudentLoginViewController.swift */; };
 		187D53C826BC80120019083B /* StudentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D53C726BC80120019083B /* StudentHomeViewController.swift */; };
+		189AE58826C83E4100971E07 /* FPAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AE58726C83E4100971E07 /* FPAdminViewController.swift */; };
 		18B5F9E626C487A100DC989A /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E526C487A100DC989A /* CourseTableViewController.swift */; };
 		18B5F9E826C487BE00DC989A /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E726C487BE00DC989A /* AddCourseViewController.swift */; };
 		18B5F9EA26C488A000DC989A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5F9E926C488A000DC989A /* Course.swift */; };
@@ -42,6 +43,7 @@
 		187D53C326BC7FCF0019083B /* studentlogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentlogin.swift; sourceTree = "<group>"; };
 		187D53C526BC7FFD0019083B /* StudentLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginViewController.swift; sourceTree = "<group>"; };
 		187D53C726BC80120019083B /* StudentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeViewController.swift; sourceTree = "<group>"; };
+		189AE58726C83E4100971E07 /* FPAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAdminViewController.swift; sourceTree = "<group>"; };
 		18B5F9E526C487A100DC989A /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
 		18B5F9E726C487BE00DC989A /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		18B5F9E926C488A000DC989A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				18B5F9E926C488A000DC989A /* Course.swift */,
 				18B5F9EB26C488AF00DC989A /* CourseList.swift */,
 				1856CA5F26C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift */,
+				189AE58726C83E4100971E07 /* FPAdminViewController.swift */,
 			);
 			path = HarpreetCambrianCoursesIosApp;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				185AF8DF269A484C00F82D6E /* AppDelegate.swift in Sources */,
 				1856CA6026C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift in Sources */,
 				185AF8E1269A484C00F82D6E /* SceneDelegate.swift in Sources */,
+				189AE58826C83E4100971E07 /* FPAdminViewController.swift in Sources */,
 				187D53C426BC7FCF0019083B /* studentlogin.swift in Sources */,
 				18B5F9EC26C488AF00DC989A /* CourseList.swift in Sources */,
 			);

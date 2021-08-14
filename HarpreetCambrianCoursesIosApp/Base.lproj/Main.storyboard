@@ -77,6 +77,14 @@
                                     <segue destination="1K0-A1-QbH" kind="show" identifier="adminsignin" id="qUg-8G-ccU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpA-Iq-NYr">
+                                <rect key="frame" x="97" y="606" width="202" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forgot Pass?"/>
+                                <connections>
+                                    <segue destination="p38-SV-dkG" kind="show" identifier="forgotpassword" id="lu0-w5-2DR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jqp-eg-sU2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -214,6 +222,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcx-TE-bI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3960.8695652173915" y="58.928571428571423"/>
+        </scene>
+        <!--ADMIN FORGOT PASSWORD-->
+        <scene sceneID="zPd-UG-0E9">
+            <objects>
+                <viewController id="p38-SV-dkG" customClass="FPAdminViewController" customModule="HarpreetCambrianCoursesIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlH-Zv-ee3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkf-dC-IAD">
+                                <rect key="frame" x="66" y="288" width="241" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaW-Mt-rHJ">
+                                <rect key="frame" x="46" y="400" width="217" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TNE-dW-O7A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ADMIN FORGOT PASSWORD" id="OcC-L4-V8y"/>
+                    <connections>
+                        <outlet property="newPassword" destination="FaW-Mt-rHJ" id="ZZx-2J-CHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ckd-VA-alA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="737.94642857142856"/>
         </scene>
         <!--STUDENT LOGIN-->
         <scene sceneID="7Hf-8X-rN6">
