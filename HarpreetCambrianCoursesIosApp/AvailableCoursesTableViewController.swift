@@ -55,12 +55,47 @@ class AvailableCourseTableViewController: UITableViewController {
         cell.textLabel?.text = String(indexPath.row + 1)
                let index = indexPath.row
                cell.detailTextLabel?.text = courseList.list[index].title
-               
+       
+       //cell.accessoryType = .detailDisclosureButton
+        //new code added for table item click
+        let customDetailDisclosureButton = UIButton.init(type: .detailDisclosure)
+
+        // set the image for .normal and .selected
+        customDetailDisclosureButton.setImage(UIImage(named: "select")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        customDetailDisclosureButton.setImage(UIImage(named: "select")?.withRenderingMode(.alwaysTemplate), for: .selected)
+
+        // add a target action
+//        customDetailDisclosureButton.addTarget(self, action: #selector(tableView(_:accessoryButtonTappedForRowWith:)), for: .touchUpInside)
+        customDetailDisclosureButton.addTarget(self, action: #selector(AvailableCourseTableViewController.accessoryButtonTapped(sender:)), for: .touchUpInside)
+        
+        cell.accessoryView = customDetailDisclosureButton
+        
                return cell
 
        
     }
     
+    //new function for table item click
+    @objc func accessoryButtonTapped(sender : UIButton){
+            let buttonPosition: CGPoint = (sender as! UIButton).convert(.zero, to: tableView)
+            let indexPath = tableView.indexPathForRow(at: buttonPosition)
+            // do what you gotta do with the indexPath
+        print(courseList.list[indexPath!.row].title)
+        var refreshAlert = UIAlertController(title: "Want to choose course", message: "Click ok to confirm otherwise cancel", preferredStyle: UIAlertController.Style.alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+          print("Handle Ok logic here")
+          }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+          print("Handle Cancel Logic here")
+          }))
+
+        present(refreshAlert, animated: true, completion: nil)
+        }
+   func touchUpInside() {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -72,15 +107,15 @@ class AvailableCourseTableViewController: UITableViewController {
 
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            courseList.removeTodo(index: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
-    }
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            // Delete the row from the data source
+//            courseList.removeTodo(index: indexPath.row)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        } else if editingStyle == .insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }
+//    }
     
 
     

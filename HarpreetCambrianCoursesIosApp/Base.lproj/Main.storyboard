@@ -384,6 +384,11 @@
                     <navigationItem key="navigationItem" title="AVAILABLE COURSES" id="cus-3z-1Uh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rq7-d3-SsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="f7v-Jj-bU0">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="3180" y="735"/>
         </scene>
