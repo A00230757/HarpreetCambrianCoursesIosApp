@@ -50,7 +50,7 @@ class StudentLoginViewController: UIViewController {
                 let dst = segue.destination as! StudentHomeViewController
                 dst.name = suser.sname
                 
-            case "forgotpassword":
+            case "studentforgotpassword":
                 print("forgot password")
 //                let dst = segue.destination as! FPViewController
 //                dst.user = user

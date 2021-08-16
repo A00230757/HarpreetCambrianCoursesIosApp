@@ -14,6 +14,7 @@ class AvailableCourseTableViewController: UITableViewController {
 //    }
     
   var courseList = CourseList()
+    var courseList2 = selectedcourselist()
     //var todoList: TodoList!
     
     override func viewDidLoad() {
@@ -80,11 +81,17 @@ class AvailableCourseTableViewController: UITableViewController {
             let buttonPosition: CGPoint = (sender as! UIButton).convert(.zero, to: tableView)
             let indexPath = tableView.indexPathForRow(at: buttonPosition)
             // do what you gotta do with the indexPath
-        print(courseList.list[indexPath!.row].title)
+//        print(courseList.list[indexPath!.row].title)
+        var v = courseList.list[indexPath!.row].title
         var refreshAlert = UIAlertController(title: "Want to choose course", message: "Click ok to confirm otherwise cancel", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
           print("Handle Ok logic here")
+            print(v)
+            self.courseList2.list.append(selectedcourse(title: v))
+            self.courseList2.save()
+            
+            
           }))
 
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in

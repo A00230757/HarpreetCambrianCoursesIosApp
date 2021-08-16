@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18563B7F26CAEC3F0000EAAD /* selectedcourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */; };
+		18563B8126CAEC590000EAAD /* selectedcourselist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8026CAEC590000EAAD /* selectedcourselist.swift */; };
+		18563B8326CAF0B00000EAAD /* SelectedCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */; };
+		18563B8526CAF5240000EAAD /* FPStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8426CAF5240000EAAD /* FPStudentViewController.swift */; };
 		1856CA6026C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856CA5F26C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift */; };
 		185AF8DF269A484C00F82D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AF8DE269A484C00F82D6E /* AppDelegate.swift */; };
 		185AF8E1269A484C00F82D6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AF8E0269A484C00F82D6E /* SceneDelegate.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourse.swift; sourceTree = "<group>"; };
+		18563B8026CAEC590000EAAD /* selectedcourselist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourselist.swift; sourceTree = "<group>"; };
+		18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCourseTableViewController.swift; sourceTree = "<group>"; };
+		18563B8426CAF5240000EAAD /* FPStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPStudentViewController.swift; sourceTree = "<group>"; };
 		1856CA5F26C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableCoursesTableViewController.swift; sourceTree = "<group>"; };
 		185AF8DB269A484C00F82D6E /* HarpreetCambrianCoursesIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarpreetCambrianCoursesIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185AF8DE269A484C00F82D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 				18B5F9EB26C488AF00DC989A /* CourseList.swift */,
 				1856CA5F26C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift */,
 				189AE58726C83E4100971E07 /* FPAdminViewController.swift */,
+				18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */,
+				18563B8026CAEC590000EAAD /* selectedcourselist.swift */,
+				18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */,
+				18563B8426CAF5240000EAAD /* FPStudentViewController.swift */,
 			);
 			path = HarpreetCambrianCoursesIosApp;
 			sourceTree = "<group>";
@@ -180,14 +192,18 @@
 				187D53C826BC80120019083B /* StudentHomeViewController.swift in Sources */,
 				187D53C026BC79F70019083B /* AdminLoginViewController.swift in Sources */,
 				18B5F9E826C487BE00DC989A /* AddCourseViewController.swift in Sources */,
+				18563B8126CAEC590000EAAD /* selectedcourselist.swift in Sources */,
 				187D53C226BC7C690019083B /* AdminHomeViewController.swift in Sources */,
 				187D53C626BC7FFD0019083B /* StudentLoginViewController.swift in Sources */,
+				18563B7F26CAEC3F0000EAAD /* selectedcourse.swift in Sources */,
 				185AF8DF269A484C00F82D6E /* AppDelegate.swift in Sources */,
 				1856CA6026C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift in Sources */,
 				185AF8E1269A484C00F82D6E /* SceneDelegate.swift in Sources */,
 				189AE58826C83E4100971E07 /* FPAdminViewController.swift in Sources */,
 				187D53C426BC7FCF0019083B /* studentlogin.swift in Sources */,
+				18563B8526CAF5240000EAAD /* FPStudentViewController.swift in Sources */,
 				18B5F9EC26C488AF00DC989A /* CourseList.swift in Sources */,
+				18563B8326CAF0B00000EAAD /* SelectedCourseTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
