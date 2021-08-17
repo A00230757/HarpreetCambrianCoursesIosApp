@@ -52,8 +52,8 @@ class StudentLoginViewController: UIViewController {
                 
             case "studentforgotpassword":
                 print("forgot password")
-//                let dst = segue.destination as! FPViewController
-//                dst.user = user
+                let dst = segue.destination as! ForgotPassStudentViewController
+                dst.student = suser
             
             default:
                 preconditionFailure("seque identifier: \(segue.identifier) was not found")

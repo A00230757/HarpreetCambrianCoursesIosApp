@@ -1,31 +1,36 @@
 //
-//  FPStudentViewController.swift
+//  ForgotPassStudentViewController.swift
 //  HarpreetCambrianCoursesIosApp
 //
-//  Created by Apple on 16/08/21.
+//  Created by Apple on 17/08/21.
 //
+
 
 import UIKit
 
-class FPStudentViewController: UIViewController {
+class ForgotPassStudentViewController: UIViewController {
 
-
+   
+    @IBOutlet weak var newPassword: UITextField!
     
-    var admin: AdminLogin!
+    
+    var student: StudentLogin!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
           super.viewWillDisappear(animated)
           
           // save new password
-//          if newPassword.text! != "" {
-//              admin.pwd = newPassword.text!
-//          }
+          if newPassword.text! != "" {
+              student.spwd = newPassword.text!
+            print(newPassword.text!)
+          }
       }
     /*
     // MARK: - Navigation

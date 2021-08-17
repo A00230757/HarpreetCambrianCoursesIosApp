@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184F670426CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */; };
 		18563B7F26CAEC3F0000EAAD /* selectedcourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */; };
 		18563B8126CAEC590000EAAD /* selectedcourselist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8026CAEC590000EAAD /* selectedcourselist.swift */; };
 		18563B8326CAF0B00000EAAD /* SelectedCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassStudentViewController.swift; sourceTree = "<group>"; };
 		18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourse.swift; sourceTree = "<group>"; };
 		18563B8026CAEC590000EAAD /* selectedcourselist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourselist.swift; sourceTree = "<group>"; };
 		18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCourseTableViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				18563B8026CAEC590000EAAD /* selectedcourselist.swift */,
 				18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */,
 				18563B8426CAF5240000EAAD /* FPStudentViewController.swift */,
+				184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */,
 			);
 			path = HarpreetCambrianCoursesIosApp;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				18563B8126CAEC590000EAAD /* selectedcourselist.swift in Sources */,
 				187D53C226BC7C690019083B /* AdminHomeViewController.swift in Sources */,
 				187D53C626BC7FFD0019083B /* StudentLoginViewController.swift in Sources */,
+				184F670426CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift in Sources */,
 				18563B7F26CAEC3F0000EAAD /* selectedcourse.swift in Sources */,
 				185AF8DF269A484C00F82D6E /* AppDelegate.swift in Sources */,
 				1856CA6026C72D9F00CEBA26 /* AvailableCoursesTableViewController.swift in Sources */,
