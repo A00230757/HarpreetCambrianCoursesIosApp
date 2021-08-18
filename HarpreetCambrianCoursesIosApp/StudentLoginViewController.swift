@@ -10,28 +10,28 @@ import UIKit
 class StudentLoginViewController: UIViewController {
 
  
-    @IBOutlet weak var studentpass: UITextField!
+    @IBOutlet weak var studentpass: UITextField!// reference of textfield password
     
-    @IBOutlet weak var studentid: UITextField!
+    @IBOutlet weak var studentid: UITextField!//reference of textfield student id
     var suser: StudentLogin!
     
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            suser = StudentLogin(sname: "abc" ,spwd: "123")
+            suser = StudentLogin(sname: "harpreet" ,spwd: "123")
             print(#function)
             
         }
 
         override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
             switch identifier{
-            case "studentsignin":
+            case "studentsignin"://to chk whether id and password match
                 if studentid.text! == suser.sname {
                     if studentpass.text! == suser.spwd {
                         return true
                     }
                 }
-                studentid.backgroundColor = .red
+                studentid.backgroundColor = .red//color change to red if invalid credentials
                 studentpass.backgroundColor = .red
                 print("username: \(suser.sname) ,\(studentid.text!) and password \(suser.spwd) , \(studentpass.text!)")
             return false
@@ -43,7 +43,7 @@ class StudentLoginViewController: UIViewController {
         }
         
         
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {//when activity prepare few initializations
             
             switch segue.identifier{
             case "studentsignin":

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		184F670426CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */; };
+		18551DA526CD71F100C5DF62 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18551DA426CD71F100C5DF62 /* Localizable.strings */; };
 		18563B7F26CAEC3F0000EAAD /* selectedcourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */; };
 		18563B8126CAEC590000EAAD /* selectedcourselist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8026CAEC590000EAAD /* selectedcourselist.swift */; };
 		18563B8326CAF0B00000EAAD /* SelectedCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */; };
@@ -34,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassStudentViewController.swift; sourceTree = "<group>"; };
+		18551DA226CD687100C5DF62 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
+		18551DA326CD687200C5DF62 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		18551DA426CD71F100C5DF62 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		18563B7E26CAEC3E0000EAAD /* selectedcourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourse.swift; sourceTree = "<group>"; };
 		18563B8026CAEC590000EAAD /* selectedcourselist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedcourselist.swift; sourceTree = "<group>"; };
 		18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCourseTableViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				18563B8226CAF0B00000EAAD /* SelectedCourseTableViewController.swift */,
 				18563B8426CAF5240000EAAD /* FPStudentViewController.swift */,
 				184F670326CC4AAD0077DDE1 /* ForgotPassStudentViewController.swift */,
+				18551DA426CD71F100C5DF62 /* Localizable.strings */,
 			);
 			path = HarpreetCambrianCoursesIosApp;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"fr-CA",
 			);
 			mainGroup = 185AF8D2269A484C00F82D6E;
 			productRefGroup = 185AF8DC269A484C00F82D6E /* Products */;
@@ -176,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185AF8EB269A485000F82D6E /* LaunchScreen.storyboard in Resources */,
+				18551DA526CD71F100C5DF62 /* Localizable.strings in Resources */,
 				185AF8E8269A485000F82D6E /* Assets.xcassets in Resources */,
 				185AF8E6269A484C00F82D6E /* Main.storyboard in Resources */,
 			);
@@ -218,6 +225,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				185AF8E5269A484C00F82D6E /* Base */,
+				18551DA226CD687100C5DF62 /* fr-CA */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				185AF8EA269A485000F82D6E /* Base */,
+				18551DA326CD687200C5DF62 /* fr-CA */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -237,6 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -298,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

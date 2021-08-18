@@ -13,7 +13,7 @@ class SelectedCourseTableViewController: UITableViewController {
 //        tableView.reloadData()
 //    }
     
-  var courseList = selectedcourselist()
+  var courseList = selectedcourselist()//list which store selected course
     //var todoList: TodoList!
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class SelectedCourseTableViewController: UITableViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
-           tableView.reloadData()
+           tableView.reloadData()//reload table with list
        }
 
     // MARK: - Table view data source
@@ -54,7 +54,7 @@ class SelectedCourseTableViewController: UITableViewController {
 //               cell.detailTextLabel!.text = ""
         cell.textLabel?.text = String(indexPath.row + 1)
                let index = indexPath.row
-               cell.detailTextLabel?.text = courseList.list[index].title
+               cell.detailTextLabel?.text = courseList.list[index].title//set data from list  to table
                
                return cell
 
@@ -75,8 +75,8 @@ class SelectedCourseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            courseList.removeTodo(index: indexPath.row)
-            courseList.save()
+            courseList.removeTodo(index: indexPath.row)//remove from list
+            courseList.save()//save to phone memory
             tableView.deleteRows(at: [indexPath], with: .fade)
             
         } else if editingStyle == .insert {

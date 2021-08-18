@@ -9,28 +9,28 @@ import UIKit
 
 class AdminLoginViewController: UIViewController {
 
-    @IBOutlet weak var adminusername: UITextField!
-    @IBOutlet weak var adminpassword: UITextField!
+    @IBOutlet weak var adminusername: UITextField!//reference to textfield admin name
+    @IBOutlet weak var adminpassword: UITextField!//reference of textfield admin password
    
     var user: AdminLogin!
     
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            user = AdminLogin(name: "Josh" ,pwd: "1234")
+            user = AdminLogin(name: "Admin" ,pwd: "1234")//onject of class with values
             print(#function)
             
         }
 
         override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
             switch identifier{
-            case "adminsignin":
+            case "adminsignin"://if credentials match or not
                 if adminusername.text! == user.name {
                     if adminpassword.text! == user.pwd {
                         return true
                     }
                 }
-                adminusername.backgroundColor = .red
+                adminusername.backgroundColor = .red//in case invalid credentials
                 adminpassword.backgroundColor = .red
                 print("username: \(user.name) and password \(user.pwd)")
             return false
@@ -42,7 +42,7 @@ class AdminLoginViewController: UIViewController {
         }
         
         
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {//when activity prepares
             
             switch segue.identifier{
             case "adminsignin":

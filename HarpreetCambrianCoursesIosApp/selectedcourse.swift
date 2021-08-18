@@ -11,17 +11,17 @@ import Foundation
 class selectedcourse: NSObject, NSCoding{
     
     
-    var title: String
+    var title: String//to store selected course
     
     init(title: String){
         self.title = title
     }
     
-    func encode(with coder: NSCoder) {
+    func encode(with coder: NSCoder) {//crud
         coder.encode(title , forKey: "title")
     }
     
-    required init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {//crud
         title = coder.decodeObject(forKey: "title") as! String
     }
 }

@@ -10,8 +10,8 @@ import UIKit
 class AddCourseViewController: UIViewController {
   
 
-    @IBOutlet weak var courseTitle: UITextField!
-    var courseList: CourseList!
+    @IBOutlet weak var courseTitle: UITextField!//reference of textfield to add ne course
+    var courseList: CourseList!//courselist object
       
       override func viewDidLoad() {
           super.viewDidLoad()
@@ -22,7 +22,7 @@ class AddCourseViewController: UIViewController {
       override func viewWillDisappear(_ animated: Bool) {
           super.viewWillDisappear(animated)
         courseList.list.append(Course(title: courseTitle.text!))
-        courseList.save()
+        courseList.save()//save to list and phone memory new course
       }
 
       /*

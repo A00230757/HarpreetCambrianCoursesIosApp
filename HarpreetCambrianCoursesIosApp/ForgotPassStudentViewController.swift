@@ -11,10 +11,10 @@ import UIKit
 class ForgotPassStudentViewController: UIViewController {
 
    
-    @IBOutlet weak var newPassword: UITextField!
+    @IBOutlet weak var newPassword: UITextField!//reference of textfield to add new passsword
     
     
-    var student: StudentLogin!
+    var student: StudentLogin!//class object
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ForgotPassStudentViewController: UIViewController {
           
           // save new password
           if newPassword.text! != "" {
-              student.spwd = newPassword.text!
+              student.spwd = newPassword.text!//save to class member variable
             print(newPassword.text!)
           }
       }

@@ -13,8 +13,10 @@ class CourseTableViewController: UITableViewController {
 //        tableView.reloadData()
 //    }
     
-  var courseList = CourseList()
+  var courseList = CourseList()//class courselist refenrence and object
     //var todoList: TodoList!
+    
+//    courseList.append(NSLocalizedString("key", comment: "value"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class CourseTableViewController: UITableViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
-           tableView.reloadData()
+           tableView.reloadData()//to reload data
        }
 
     // MARK: - Table view data source
@@ -41,7 +43,7 @@ class CourseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //return todos.count
-        return courseList.list.count
+        return courseList.list.count//return total items in list
     }
 
     
@@ -54,7 +56,7 @@ class CourseTableViewController: UITableViewController {
 //               cell.detailTextLabel!.text = ""
         cell.textLabel?.text = String(indexPath.row + 1)
                let index = indexPath.row
-               cell.detailTextLabel?.text = courseList.list[index].title
+               cell.detailTextLabel?.text = courseList.list[index].title//set values of list to table cells
                
                return cell
 
@@ -75,10 +77,10 @@ class CourseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            courseList.removeTodo(index: indexPath.row)
-            courseList.save()
+            courseList.removeTodo(index: indexPath.row)//remove from list and phone memory
+            courseList.save()//save to list again
             tableView.deleteRows(at: [indexPath], with: .fade)
-            
+            //to delete a particular cell data
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
@@ -104,7 +106,7 @@ class CourseTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {//to move to add new course segue
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "addCourse" {

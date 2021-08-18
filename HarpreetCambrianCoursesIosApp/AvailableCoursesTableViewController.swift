@@ -13,8 +13,8 @@ class AvailableCourseTableViewController: UITableViewController {
 //        tableView.reloadData()
 //    }
     
-  var courseList = CourseList()
-    var courseList2 = selectedcourselist()
+  var courseList = CourseList()//all courses added by admin list object
+    var courseList2 = selectedcourselist()//this list store selected courses by student
     //var todoList: TodoList!
     
     override func viewDidLoad() {
@@ -57,6 +57,8 @@ class AvailableCourseTableViewController: UITableViewController {
                let index = indexPath.row
                cell.detailTextLabel?.text = courseList.list[index].title
        
+        
+        //to show button to select a particular course
        //cell.accessoryType = .detailDisclosureButton
         //new code added for table item click
         let customDetailDisclosureButton = UIButton.init(type: .detailDisclosure)
@@ -69,7 +71,7 @@ class AvailableCourseTableViewController: UITableViewController {
 //        customDetailDisclosureButton.addTarget(self, action: #selector(tableView(_:accessoryButtonTappedForRowWith:)), for: .touchUpInside)
         customDetailDisclosureButton.addTarget(self, action: #selector(AvailableCourseTableViewController.accessoryButtonTapped(sender:)), for: .touchUpInside)
         
-        cell.accessoryView = customDetailDisclosureButton
+        cell.accessoryView = customDetailDisclosureButton//custom button set in each table cell
         
                return cell
 
@@ -85,21 +87,25 @@ class AvailableCourseTableViewController: UITableViewController {
         var v = courseList.list[indexPath!.row].title
         var refreshAlert = UIAlertController(title: "Want to choose course", message: "Click ok to confirm otherwise cancel", preferredStyle: UIAlertController.Style.alert)
 
+        
+        //if ok clicked this will run
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
           print("Handle Ok logic here")
             print(v)
             self.courseList2.list.append(selectedcourse(title: v))
-            self.courseList2.save()
+            self.courseList2.save()//saved to selected course list and phone memory
             
             
           }))
 
+        //if cancel clicked this will run
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
           print("Handle Cancel Logic here")
           }))
 
         present(refreshAlert, animated: true, completion: nil)
         }
+    
    func touchUpInside() {
         
     }

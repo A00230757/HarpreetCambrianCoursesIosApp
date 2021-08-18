@@ -8,8 +8,8 @@
 import Foundation
 
 class selectedcourselist{
-    var list = [selectedcourse]()
-    let courseURL:URL  = {
+    var list = [selectedcourse]()//list of selected course
+    let courseURL:URL  = {//crud setup
         let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentDirectories.first!
         return documentDirectory.appendingPathComponent("selectedcourse.archive")

@@ -9,7 +9,7 @@ import UIKit
 
 class AdminHomeViewController: UIViewController {
     var name: String!
-    @IBOutlet weak var welcomeMessage: UILabel!
+    @IBOutlet weak var welcomeMessage: UILabel!//laabel to show welcome message
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +17,7 @@ class AdminHomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
-           welcomeMessage.text = "welcome back \(name!)"
+           welcomeMessage.text = "welcome back \(name!)"//name set on label
        }
 
     /*

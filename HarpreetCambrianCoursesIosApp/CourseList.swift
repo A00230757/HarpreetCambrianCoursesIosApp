@@ -8,8 +8,8 @@
 import Foundation
 
 class CourseList{
-    var list = [Course]()
-    let courseURL:URL  = {
+    var list = [Course]()//list
+    let courseURL:URL  = {//crud setup
         let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentDirectories.first!
         return documentDirectory.appendingPathComponent("course.archive")
@@ -33,11 +33,11 @@ class CourseList{
         }
     }
     
-    func removeTodo(index: Int){
+    func removeTodo(index: Int){//function to remove item from list
            list.remove(at: index)
        }
     
-    func moveTodo(from fromIndex: Int, to toIndex: Int){
+    func moveTodo(from fromIndex: Int, to toIndex: Int){//remove a range
           let temp = list[fromIndex]
           list.remove(at: fromIndex)
           list.insert(temp, at: toIndex)

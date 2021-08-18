@@ -10,9 +10,9 @@ import UIKit
 class FPAdminViewController: UIViewController {
 
    
-    @IBOutlet weak var newPassword: UITextField!
+    @IBOutlet weak var newPassword: UITextField!//reference textfield add new password
     
-    var admin: AdminLogin!
+    var admin: AdminLogin!//class object
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class FPAdminViewController: UIViewController {
           
           // save new password
           if newPassword.text! != "" {
-              admin.pwd = newPassword.text!
+              admin.pwd = newPassword.text!//save new passsword to class member variable
           }
       }
     /*

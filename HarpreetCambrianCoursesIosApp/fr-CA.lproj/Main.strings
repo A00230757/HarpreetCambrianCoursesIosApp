@@ -1,0 +1,126 @@
+
+/* Class = "UINavigationItem"; title = "SELECTED COURSES"; ObjectID = "10E-Wr-sZK"; */
+"10E-Wr-sZK.title" = "COURS SÉLECTIONNÉS";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "1Ep-yP-yOO"; */
+"1Ep-yP-yOO.title" = "Article";
+
+/* Class = "UINavigationItem"; title = "MAIN INTERFACE"; ObjectID = "3HH-um-bpK"; */
+"3HH-um-bpK.title" = "NTERFACE PRINCIPALE";
+
+/* Class = "UIButton"; normalTitle = "view/select available courses"; ObjectID = "48h-bI-Kbm"; */
+"48h-bI-Kbm.normalTitle" = "voir/sélectionner les cours disponibles";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "6by-no-ZUN"; */
+"6by-no-ZUN.text" = "Titre";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "6gy-LP-FnQ"; */
+"6gy-LP-FnQ.text" = "Titre";
+
+/* Class = "UINavigationItem"; title = "STUDENT LOGIN"; ObjectID = "716-7c-l0g"; */
+"716-7c-l0g.title" = "CONNEXION ÉTUDIANT";
+
+/* Class = "UITextField"; placeholder = "admin id"; ObjectID = "ASt-SM-Spx"; */
+"ASt-SM-Spx.placeholder" = "identifiant administrateur";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "BX6-Ro-xBP"; */
+"BX6-Ro-xBP.text" = "Titre";
+
+/* Class = "UITextField"; placeholder = "enter new password"; ObjectID = "FaW-Mt-rHJ"; */
+"FaW-Mt-rHJ.placeholder" = "Entrez un nouveau mot de passe";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "HDE-Rz-6Wr"; */
+"HDE-Rz-6Wr.placeholder" = "le mot de passe";
+
+/* Class = "UINavigationItem"; title = "ADMIN LOGIN"; ObjectID = "K7F-bs-uUR"; */
+"K7F-bs-uUR.title" = "CONNEXION ADMINISTRATIVE";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "LX2-nO-SIw"; */
+"LX2-nO-SIw.normalTitle" = "S'identifier";
+
+/* Class = "UIButton"; normalTitle = "view selected courses"; ObjectID = "NDW-a8-z0V"; */
+"NDW-a8-z0V.normalTitle" = "voir les cours sélectionnés";
+
+/* Class = "UINavigationItem"; title = "ADMIN FORGOT PASSWORD"; ObjectID = "OcC-L4-V8y"; */
+"OcC-L4-V8y.title" = "ADMIN MOT DE PASSE OUBLIÉ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UfE-Y2-PcL"; */
+"UfE-Y2-PcL.text" = "Étiqueter";
+
+/* Class = "UITextField"; placeholder = "enter new password"; ObjectID = "V5x-sy-lcf"; */
+"V5x-sy-lcf.placeholder" = "Entrez un nouveau mot de passe";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "WP6-WW-NYt"; */
+"WP6-WW-NYt.placeholder" = "le mot de passe";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WbX-Dn-h1a"; */
+"WbX-Dn-h1a.text" = "Étiqueter";
+
+/* Class = "UIButton"; normalTitle = "ADMIN"; ObjectID = "YLB-aU-Qbt"; */
+"YLB-aU-Qbt.normalTitle" = "ADMINISTRER";
+
+/* Class = "UINavigationItem"; title = "ADD NEW COURSE"; ObjectID = "ZUK-Qn-fri"; */
+"ZUK-Qn-fri.title" = "AJOUTER UN NOUVEAU COURS";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "acZ-5l-yla"; */
+"acZ-5l-yla.text" = "Détail";
+
+/* Class = "UINavigationItem"; title = "CHOOSE AVAILABLE COURSES"; ObjectID = "cus-3z-1Uh"; */
+"cus-3z-1Uh.title" = "CHOISIR LES COURS DISPONIBLES";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "dEh-DK-8oU"; */
+"dEh-DK-8oU.text" = "Détail";
+
+/* Class = "UIButton"; normalTitle = "Forgot Pass?"; ObjectID = "dGk-Rg-nX2"; */
+"dGk-Rg-nX2.normalTitle" = "Mot de passe oublié?";
+
+/* Class = "UILabel"; text = "ENTER CREDENTIALS"; ObjectID = "daU-MT-Kox"; */
+"daU-MT-Kox.text" = "SAISIR LES POUVOIRS";
+
+/* Class = "UILabel"; text = "Enter New Password"; ObjectID = "dkf-dC-IAD"; */
+"dkf-dC-IAD.text" = "Entrez un nouveau mot de passe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f7v-Jj-bU0"; */
+"f7v-Jj-bU0.normalTitle" = "Bouton";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "fHG-Ce-Od3"; */
+"fHG-Ce-Od3.text" = "Détail";
+
+/* Class = "UINavigationItem"; title = "STUDENT RECOVER PASSWRD"; ObjectID = "fO9-Bf-82h"; */
+"fO9-Bf-82h.title" = "ÉTUDIANT RÉCUPÉRER LE MOT DE PASSE";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "i6B-zN-CU1"; */
+"i6B-zN-CU1.normalTitle" = "S'identifier";
+
+/* Class = "UILabel"; text = "Add New Course"; ObjectID = "iLF-0c-o0I"; */
+"iLF-0c-o0I.text" = "Ajouter un nouveau cours";
+
+/* Class = "UINavigationItem"; title = "STUDENT HOME"; ObjectID = "j9Z-Kf-UbE"; */
+"j9Z-Kf-UbE.title" = "MAISON ÉTUDIANTE";
+
+/* Class = "UIButton"; normalTitle = "STUDENT"; ObjectID = "kCE-O9-Q3t"; */
+"kCE-O9-Q3t.normalTitle" = "ÉTUDIANT";
+
+/* Class = "UIButton"; normalTitle = "Manage Course"; ObjectID = "m7J-3q-WNw"; */
+"m7J-3q-WNw.normalTitle" = "Gérer le cours";
+
+/* Class = "UILabel"; text = "ENTER CREDENTIALS"; ObjectID = "n2u-Ff-mam"; */
+"n2u-Ff-mam.text" = "SAISIR LES POUVOIRS";
+
+/* Class = "UINavigationItem"; title = "MANAGE COURSE"; ObjectID = "pwL-Ke-O0B"; */
+"pwL-Ke-O0B.title" = "Gérer le cours";
+
+/* Class = "UINavigationItem"; title = "ADMIN HOME"; ObjectID = "r9L-YO-8nC"; */
+"r9L-YO-8nC.title" = "ADMINISTRATION ACCUEIL";
+
+/* Class = "UIButton"; normalTitle = "Forgot Pass?"; ObjectID = "vpA-Iq-NYr"; */
+"vpA-Iq-NYr.normalTitle" = "Mot de passe oublié?";
+
+/* Class = "UITextField"; placeholder = "student id"; ObjectID = "xpf-Du-uNV"; */
+"xpf-Du-uNV.placeholder" = "Mot de passe oublié";
+
+/* Class = "UITextField"; placeholder = "enter course title"; ObjectID = "y8R-wz-YDM"; */
+"y8R-wz-YDM.placeholder" = "saisir le titre du cours";
+
+/* Class = "UILabel"; text = "Enter New Password"; ObjectID = "yUX-vs-6eb"; */
+"yUX-vs-6eb.text" = "Entrez un nouveau mot de passe";

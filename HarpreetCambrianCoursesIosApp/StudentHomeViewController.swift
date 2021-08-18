@@ -9,7 +9,7 @@ import UIKit
 
 class StudentHomeViewController: UIViewController {
     var name: String!
-    @IBOutlet weak var welcomeMessage: UILabel!
+    @IBOutlet weak var welcomeMessage: UILabel!//reference of label to show welcome message
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +17,7 @@ class StudentHomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
-           welcomeMessage.text = "welcome back \(name!)"
+           welcomeMessage.text = "welcome back \(name!)"//value /name set to label
        }
 
     /*

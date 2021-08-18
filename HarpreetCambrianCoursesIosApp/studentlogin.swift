@@ -7,10 +7,10 @@
 
 import Foundation
 class StudentLogin{
-   var sname: String
-   var spwd: String
+   var sname: String//to store name of student
+   var spwd: String// to store password of student
     
-    init(sname: String ,spwd: String){
+    init(sname: String ,spwd: String){//constructor to initialize
         self.sname = sname
         self.spwd = spwd
     }
